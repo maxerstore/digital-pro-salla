@@ -1,47 +1,56 @@
 {
   "name": "Digital-Pro-Theme",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "settings": [
     {
       "type": "color",
       "id": "primary_color",
-      "label": "Primary Color",
+      "label": {
+        "ar": "اللون الأساسي",
+        "en": "Primary Color"
+      },
       "default": "#5B7CFF"
     },
     {
       "type": "toggle",
       "id": "dark_mode",
-      "label": "Enable Dark Mode",
+      "label": {
+        "ar": "تفعيل الوضع الليلي",
+        "en": "Enable Dark Mode"
+      },
       "default": true
     },
     {
       "type": "text",
-      "id": "hero_title_ar",
-      "label": "عنوان الهيرو (AR)",
-      "default": "ملفاتك خلال ثوانٍ"
-    },
-    {
-      "type": "text",
-      "id": "hero_title_en",
-      "label": "Hero Title (EN)",
-      "default": "Your files in seconds"
-    },
-    {
-      "type": "textarea",
-      "id": "hero_sub_ar",
-      "label": "وصف الهيرو (AR)",
-      "default": "منتجات رقمية جاهزة للتنزيل مباشرة بعد الدفع"
+      "id": "hero_title",
+      "label": {
+        "ar": "عنوان الهيرو",
+        "en": "Hero Title"
+      },
+      "default": {
+        "ar": "ملفاتك خلال ثوانٍ",
+        "en": "Your files in seconds"
+      }
     },
     {
       "type": "textarea",
-      "id": "hero_sub_en",
-      "label": "Hero Subtitle (EN)",
-      "default": "Digital products ready to download instantly after payment"
+      "id": "hero_subtitle",
+      "label": {
+        "ar": "وصف الهيرو",
+        "en": "Hero Subtitle"
+      },
+      "default": {
+        "ar": "منتجات رقمية جاهزة للتنزيل مباشرة بعد الدفع",
+        "en": "Digital products ready to download instantly after payment"
+      }
     },
     {
       "type": "toggle",
       "id": "show_instant_badge",
-      "label": "Show Instant Badge",
+      "label": {
+        "ar": "إظهار شارة التسليم الفوري",
+        "en": "Show Instant Badge"
+      },
       "default": true
     }
   ]
