@@ -1,0 +1,20 @@
+{% extends "layouts/default.twig" %}
+{% block content %}
+  <section class="hero">
+    {% if store.language == 'ar' %}
+      <h1>{{ settings.hero_title_ar }}</h1>
+      <p>{{ settings.hero_sub_ar }}</p>
+      <a class="cta" href="/categories">تصفح المنتجات</a>
+    {% else %}
+      <h1>{{ settings.hero_title_en }}</h1>
+      <p>{{ settings.hero_sub_en }}</p>
+      <a class="cta" href="/categories">Browse Products</a>
+    {% endif %}
+  </section>
+  <section class="features" style="text-align:center; padding:20px;">
+    <div class="feature">⚡ {{ store.language == 'ar' ? 'تسليم فوري' : 'Instant Delivery' }}</div>
+    <div class="feature">🔒 {{ store.language == 'ar' ? 'دفع آمن' : 'Secure Payment' }}</div>
+    <div class="feature">💬 {{ store.language == 'ar' ? 'دعم سريع' : 'Fast Support' }}</div>
+  </section>
+  <salla-products-slider title="{{ store.language == 'ar' ? 'الأكثر مبيعًا' : 'Best Sellers' }}"></salla-products-slider>
+{% endblock %}

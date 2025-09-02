@@ -1,0 +1,19 @@
+{% extends "layouts/default.twig" %}
+{% block content %}
+  <article class="product-page">
+    <h1>{{ product.name }}</h1>
+    {% if settings.show_instant_badge %}
+      <div class="badge">🚀 {{ store.language == 'ar' ? 'تسليم فوري' : 'Instant Delivery' }}</div>
+    {% endif %}
+    <div class="file-info">
+      <p>{{ store.language == 'ar' ? 'الملف: PDF / ZIP' : 'File: PDF / ZIP' }}</p>
+      <p>{{ store.language == 'ar' ? 'الحجم: 15MB' : 'Size: 15MB' }}</p>
+    </div>
+    <salla-add-product product-id="{{ product.id }}"></salla-add-product>
+    <salla-rating-stars rating="{{ product.rating }}"></salla-rating-stars>
+    <section class="after-purchase">
+      <h3>{{ store.language == 'ar' ? 'بعد الشراء:' : 'After Purchase:' }}</h3>
+      <p>{{ store.language == 'ar' ? 'ستجد روابط التحميل مباشرة في صفحة الطلب + بريدك الإلكتروني.' : 'You will find download links in the order page and your email.' }}</p>
+    </section>
+  </article>
+{% endblock %}

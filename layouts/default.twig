@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ store.language == 'ar' ? 'ar' : 'en' }}" dir="{{ store.language == 'ar' ? 'rtl' : 'ltr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}{{ store.language == 'ar' ? 'المتجر' : 'Store' }}{% endblock %}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/script.js" defer></script>
+</head>
+<body>
+  {% include 'components/header.twig' %}
+  <main id="content">{% block content %}{% endblock %}</main>
+  {% include 'components/footer.twig' %}
+</body>
+</html>

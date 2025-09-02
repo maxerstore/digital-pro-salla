@@ -1,0 +1,31 @@
+/* Basic styles + RTL/LTR support */
+:root{
+  --primary: #5B7CFF;
+  --bg: #ffffff;
+  --text: #222;
+}
+[dir="rtl"]{ direction: rtl; }
+[dir="ltr"]{ direction: ltr; }
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  margin:0;
+}
+.hero{
+  padding: 40px;
+  text-align: center;
+}
+.cta{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  margin-top:12px;
+}
+.badge{ display:inline-block; padding:6px 10px; background:#f0f0f0; border-radius:6px; margin-bottom:8px; }
+.product-page{ max-width:900px; margin:20px auto; padding:16px; }
+/* RTL fixes for layout */
+[dir="rtl"] .cta{ direction: rtl; }

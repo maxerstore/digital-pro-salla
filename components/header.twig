@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="top">{% if settings.show_instant_badge %}<span class="badge">{{ store.language == 'ar' ? 'تسليم فوري' : 'Instant Delivery' }}</span>{% endif %}</div>
+  <div class="main">
+    <a class="logo" href="/">{{ store.language == 'ar' ? 'متجر رقمي' : 'Digital Store' }}</a>
+    <nav class="nav">
+      <a href="/categories">{{ store.language == 'ar' ? 'المنتجات' : 'Products' }}</a>
+      <a href="/faq">{{ store.language == 'ar' ? 'الأسئلة' : 'FAQ' }}</a>
+    </nav>
+  </div>
+</header>
